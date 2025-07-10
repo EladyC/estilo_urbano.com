@@ -1,0 +1,42 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+header {
+  background: url("../img/suave.jpg") center/cover no-repeat fixed;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.section-content {
+  padding: 60px 0;
+}
+.section-content img {
+  border-radius: 10px;  
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+.btn-custom {
+  background-color: #f06c64;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: #e95a50;
+  transform: scale(1.05);
+}
+footer {
+  background: #111;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}

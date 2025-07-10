@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moda Sostenible - Estilo Urbano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <style>
+        .hero-img {
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            border-radius: 0;
+        }
+
+        .sec-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion-button {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top shadow" data-bs-theme="dark">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold" href="../html/index.html">Estilo Urbano</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/blogmoda.html">Blog de Moda</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-light" href="../html/contacto.html">Contáctanos</a>
+            </div>
+        </div>
+    </nav>
+    <section class="mt-5 pt-5">
+        <img src="../img/sostenible-hero.jpg" alt="Moda Sostenible" class="hero-img" />
+    </section>
+    <section class="container py-5">
+        <h2 class="text-center fw-bold mb-4">Nuestro Compromiso con la Moda Sostenible</h2>
+        <p class="text-center mb-5 px-3">
+            En Estilo Urbano, creemos que el futuro de la moda está en el respeto por el planeta. Nuestra línea
+            sostenible
+            nace del deseo de ofrecer prendas modernas, duraderas y responsables con el medio ambiente y la sociedad.
+        </p>
+        <ul class="nav nav-tabs mb-4" id="sustainTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="materiales-tab" data-bs-toggle="tab" data-bs-target="#materiales"
+                    type="button" role="tab">Materiales ecológicos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="procesos-tab" data-bs-toggle="tab" data-bs-target="#procesos" type="button"
+                    role="tab">Procesos sostenibles</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="impacto-tab" data-bs-toggle="tab" data-bs-target="#impacto" type="button"
+                    role="tab">Impacto social</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="sustainTabsContent">
+            <div class="tab-pane fade show active" id="materiales" role="tabpanel">
+                <p>Usamos algodón orgánico, fibras recicladas y materiales veganos certificados. Esto reduce el uso de
+                    pesticidas, agua y emisiones de carbono en la producción.</p>
+            </div>
+            <div class="tab-pane fade" id="procesos" role="tabpanel">
+                <p>Nuestras fábricas están comprometidas con la eficiencia energética, el uso responsable del agua y
+                    tintes
+                    libres de tóxicos. Reducimos desperdicios y priorizamos producción local.</p>
+            </div>
+            <div class="tab-pane fade" id="impacto" role="tabpanel">
+                <p>Trabajamos con cooperativas textiles y garantizamos condiciones laborales dignas. El 30% de nuestra
+                    producción
+                    proviene de iniciativas de reinserción laboral.</p>
+            </div>
+        </div>
+
+        <div class="row my-5 align-items-center">
+            <div class="col-md-6">
+                <img src="../img/materiales-eco.jpg" alt="Materiales ecológicos" class="sec-img" />
+            </div>
+            <div class="col-md-6">
+                <h4 class="fw-bold">Prendas hechas con conciencia</h4>
+                <p>Desde camisetas básicas hasta chaquetas urbanas, nuestras prendas sostenibles no sacrifican estilo
+                    por ética.
+                    Cada pieza cuenta con trazabilidad y etiquetas con información del impacto ambiental de su
+                    fabricación.</p>
+            </div>
+        </div>
+
+        <div class="row my-5 align-items-center flex-row-reverse">
+            <div class="col-md-6">
+                <img src="../img/comunidad.jpg" alt="Apoyo a comunidades" class="sec-img" />
+            </div>
+            <div class="col-md-6">
+                <h4 class="fw-bold">Comprometidos con la comunidad</h4>
+                <p>Colaboramos con pequeños productores, promovemos el comercio justo y donamos parte de nuestras
+                    ganancias a
+                    programas ambientales y sociales. Queremos que cada compra tenga un propósito.</p>
+            </div>
+        </div>
+
+        <div class="accordion mt-4" id="accordionSostenible">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseUno">¿Qué es la moda sostenible?</button>
+                </h2>
+                <div id="collapseUno" class="accordion-collapse collapse show" data-bs-parent="#accordionSostenible">
+                    <div class="accordion-body">
+                        Es una forma de crear, distribuir y consumir ropa sin dañar el medio ambiente ni a las personas.
+                        Prioriza
+                        la durabilidad, los materiales naturales o reciclados, la transparencia y la justicia social.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseDos">¿Cómo saber si una prenda es sostenible?</button>
+                </h2>
+                <div id="collapseDos" class="accordion-collapse collapse" data-bs-parent="#accordionSostenible">
+                    <div class="accordion-body">
+                        Busca certificaciones como GOTS, OEKO-TEX o FairTrade. Fíjate en el origen de los materiales, el
+                        lugar de
+                        fabricación y la política ambiental de la marca.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-light pt-5">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-6 col-lg-4">
+                    <h3 class="fw-bold">Estilo Urbano</h3>
+                    <p class="pt-2">Av. Alfredo Mendiola 1420</p>
+                    <p class="mb-2">+51 987 654 321</p>
+                    <p>contacto@estilourbano.com</p>
+                </div>
+                <div class="col">
+                    <h4>Menú</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1">Inicio</li>
+                        <li class="py-1">Blog</li>
+                        <li class="py-1">Productos</li>
+                        <li class="py-1">Contacto</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Información</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1">Preguntas Frecuentes</li>
+                        <li class="py-1">Guía de Tallas</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Categorías</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1">Ropa Ecológica</li>
+                        <li class="py-1">Edición Limitada</li>
+                        <li class="py-1">Unisex</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 text-lg-end">
+                    <h4>Síguenos</h4>
+                    <div class="social-media pt-2">
+                        <a href="#" class="text-light fs-2 me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-2 me-3"><i class="bi bi-pinterest"></i></a>
+                        <a href="#" class="text-light fs-2 me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light fs-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-sm-flex justify-content-between py-1">
+                <p>2025 © Estilo Urbano. Todos los derechos reservados.</p>
+                <p>
+                    <a href="#" class="text-light text-decoration-none pe-4">Términos de uso</a>
+                    <a href="#" class="text-light text-decoration-none">Política de privacidad</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

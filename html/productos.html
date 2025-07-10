@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+        .texto-tachado {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top shadow" data-bs-theme="dark">
+            <div class="container-lg">
+                <a class="navbar-brand fw-bold" href="../html/index.html">Estilo Urbano</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/blogmoda.html">Blog de Moda</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="submenu">
+                            <img src="../img/car.svg" id="img-carrito">
+                            <div id="carrito">
+                                <table id="lista-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen&nbsp;|</th>
+                                            <th>&nbsp;Nombre&nbsp;|</th>
+                                            <th>&nbsp;Precio&nbsp;</th>
+                                            <th></th>
+                                        </tr>
+                                    <tbody></tbody>
+                                    </thead>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        </div>
+        </div>
+
+        <div class="header-content container">
+            <div clas="header-txt">
+                <h1>Ofertas Especiales</h1>
+                <p>
+                    ¡Estrena las mejores prendas!
+                    <br>¿Perderás esta promoción?
+                </p>
+                <a href="#" class="btn-1">Información</a>
+            </div>
+            <div class="header-img">
+                <img src="../img/right.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="oferts container" id="lista-1">
+        <h2>Polos y Pantalones</h2>
+        <p>
+            Las mejores prendas cerca de usted, calidad premium y entregas a todo Lima!
+        </p>
+
+        <div class="oferts-content">
+            <div class="ofert-1">
+                <img src="../img/pr1.png" alt="">
+                <div class="product-txt">
+                    <h3>Manga Larga</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">S/.100</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <img src="../img/pr2.png" alt="">
+                <div class="product-txt">
+                    <h3>Manga Corta</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">S/.100</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar</a>
+                </div>
+            </div>
+
+            <div class="logan-1">
+                <h3>Polos</h3>
+                <p>
+                    Diferentes Texturas
+                </p>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+
+        <div class="oferts-content">
+            <div class="logan-1">
+                <h3>Pantalones</h3>
+                <p>
+                    Cortos y largos
+                </p>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+            <div class="ofert-1">
+                <img src="../img/pr3.png" alt="">
+                <div class="product-txt">
+                    <h3>Jean</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">S/.120</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <img src="../img/pr4.png" alt="">
+                <div class="product-txt">
+                    <h3>De Algodón</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">S/.80</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promotion">
+        <div class="promotion-content container">
+            <div class="promotion-txt">
+                <h2>¡Las mejores promociones!</h2>
+                <p>Se acerca el día del padre... ¡Es hora de sorprender a papá! Por este mes <strong>20% en
+                        descuento</strong> en toda prenda para hombre</p>
+                <a href="#" class="btn-1">Información</a>
+            </div>
+            <div class="promotion-img">
+                <img src="../img/r1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <main class="product container" id="lista-2">
+        <h2>Productos</h2>
+        <p>¡Nuestros principales productos! <strong>¡Todo tipo de camisas, casacas, y más!</strong>
+        </p>
+        <div class="product-content">
+            <div class="ofert-1">
+                <img src="../img/1p.png" alt="">
+                <div class="product-txt">
+                    <h3>Camisa Manga Larga</h3>
+                    <p>Calidad Premium</p>
+                    <p><span class="texto-tachado">S/.300</span></p>
+                    <p class="precio">S/.150</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <img src="../img/2p.png" alt="">
+                <div class="product-txt">
+                    <h3>Casaca gruesa</h3>
+                    <p>Calidad Premium</p>
+                    <p><span class="texto-tachado">S/.200</span></p>
+                    <p class="precio">S/.120</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <img src="../img/3p.png" alt="">
+                <div class="product-txt">
+                    <h3>Casaca de cuero</h3>
+                    <p>Calidad Premium</p>
+                    <p><span class="texto-tachado">S/.225</span></p>
+                    <p class="precio">S/.150</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <img src="../img/4p.png" alt="">
+                <div class="product-txt">
+                    <h3>Camisa de Algodón</h3>
+                    <p>Calidad Premium</p>
+                    <p><span class="texto-tachado">S/.180</span></p>
+                    <p class="precio">S/.120</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <img src="../img/5p.png" alt="">
+                <div class="product-txt">
+                    <h3>Camisa Fit</h3>
+                    <p>Calidad Premium</p>
+                    <p><span class="texto-tachado">S/.200</span></p>
+                    <p class="precio">S/.160</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <img src="../img/6p.png" alt="">
+                <div class="product-txt">
+                    <h3>Abrigo</h3>
+                    <p>Calidad Premium</p>
+                    <p><span class="texto-tachado">S/.399</span></p>
+                    <p class="precio">S/.299</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="blog container">
+        <h2>Nuevas noticias</h2>
+        <p><strong>¡Próximamente!</strong><br> Mayor variedad en productos como:
+            Zapatos, Gafas, Bolsos y mucho más!
+        </p>
+
+        <div class="blog-content">
+            <div class="blog-1">
+                <img src="../img/b1.jpg" alt="Conjunto urbano">
+                <div class="blog-txt">
+                    <p>Explora nuestras combinaciones urbanas ideales para el día a día: camisetas a rayas, accesorios
+                        de cuero, lentes modernos y zapatos versátiles. Estilo y funcionalidad en cada detalle.</p>
+                </div>
+                <a href="#" class="btn-4">Leer más</a>
+            </div>
+
+            <div class="blog-1">
+                <img src="../img/b2.jpg" alt="Zapatos elegantes">
+                <div class="blog-txt">
+                    <p>Próximamente en nuestra colección: camisas con estilo clásico y zapatos de vestir de cuero. Una
+                        propuesta ideal para eventos formales o reuniones ejecutivas con identidad urbana.</p>
+                </div>
+                <br>
+                <a href="#" class="btn-4">Leer más</a>
+            </div>
+
+            <div class="blog-1">
+                <img src="../img/b3.jpg" alt="Camisas premium">
+                <div class="blog-txt">
+                    <p>Nuevas camisas de alta gama presentadas en estuches de lujo. Detalles cuidados, tejidos suaves y
+                        cortes modernos que elevan tu presencia en cualquier ocasión.</p>
+                </div>
+                <br>
+                <br>
+                <a href="#" class="btn-4">Leer más</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="text-light pt-5">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-6 col-lg-4">
+                    <h3 class="fw-bold">Estilo Urbano</h3>
+                    <p class="pt-2">Av. Alfredo Mendiola 1420</p>
+                    <p class="mb-2">+51 987 654 321</p>
+                    <p>contacto@estilourbano.com</p>
+                </div>
+                <div class="col">
+                    <h4>Menú</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1">Inicio</li>
+                        <li class="py-1">Hombres</li>
+                        <li class="py-1">Mujeres</li>
+                        <li class="py-1">Contacto</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Información</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1">Novedades</li>
+                        <li class="py-1">Preguntas Frecuentes</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Categorías</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1">Camisas</li>
+                        <li class="py-1">Pantalones</li>
+                        <li class="py-1">Vestidos</li>
+                        <li class="py-1">Accesorios</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 text-lg-end">
+                    <h4>Síguenos</h4>
+                    <div class="social-media pt-2">
+                        <a href="#" class="text-light fs-2 me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-2 me-3"><i class="bi bi-pinterest"></i></a>
+                        <a href="#" class="text-light fs-2 me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light fs-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-sm-flex justify-content-between py-1">
+                <p>2025 © Estilo Urbano. Todos los derechos reservados.</p>
+                <p>
+                    <a href="#" class="text-light text-decoration-none pe-4">Términos de uso</a>
+                    <a href="#" class="text-light text-decoration-none">Política de privacidad</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="../js/productos.js"></script>
+</body>
+
+</html>
